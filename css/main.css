@@ -1,0 +1,302 @@
+/******************************
+Base element styles
+*******************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+Font-Size: 16px;
+  /* font-family: Helvetica; */
+  /* Font-Family: 'Source Sans Pro', Sans-Serif; */
+  
+  /* Font-Family: 'Raleway', Sans-Serif;
+  Font-Size: 20px;  */
+  /* Font-Size: 50px; */
+  /* Font-Size: 16px;   */
+  /* background: #6a6a6a; */
+  line-height: 3;
+  background-color: #e9dada;
+  
+}
+
+h1,
+  
+h2,
+h3 {
+  /* Font-Family: 'Playfair Display', Serif;
+  Font-Size: 48px; */
+  /* Font-Family: 'Samantha'; */
+  Font-Family: 'Playfair Display', Serif;
+Font-Size: 48px;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+
+
+.header {
+  padding: 5px 0;
+  margin: 0 auto;
+  /* To set width the same as rest, change to 1100 */
+  max-width: 1200px;
+  background-color: #a9e420;
+  border: 1px solid red;
+}
+
+
+.logo {
+  font-size: 28px;
+  font-weight:900;
+  letter-spacing: .1rem;
+  color: #aa0dd1;
+  width: 400px;
+  background-size: contain;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 50px;
+  padding-top: 0;
+  border: 1px solid rgb(31, 33, 187);
+  
+}
+.header {
+  position: relative;
+}
+.chef {
+  position: absolute;
+  top: 2.1rem;
+  left: 2px;
+  
+  
+}
+
+.nav {
+  list-style: none;
+  border: 1px solid yellow;
+}
+
+.nav li {
+  margin: 12px 0 12px 18px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #4683af;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px 16px 7px;
+}
+
+.nav li a:hover {
+  background-color: #FB8804;
+  color: black;
+  border-radius: 5%;
+  transition: 300ms ease-in-out;
+}
+
+.nav li:last-child {
+  margin-right: 5px;
+}
+
+/* .nav li:last-child a {
+  background: #FB8804;
+  color: #4683af;
+  border-radius: 2px;
+  transition: 200ms ease-in-out;
+  padding: 8px 16px 7px;
+}
+
+.nav li:last-child a:hover {
+  background:#FB8804 ;
+  color: black;
+} */
+a.icon {
+  text-decoration: none;
+}
+
+.fa-bars {
+  color: #FB8804;
+  padding: .15rem;
+  border: solid 1px #afa6a6;
+  font-size: 25px;
+}
+
+
+.fa-bars:hover {
+  background-color: #FB8804;
+  color: black;
+}
+.imgResponse {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  padding: .7em;
+  border: solid 1px #d1d0d0;
+  border-radius: 10%;
+}
+
+.feat-img {
+  width: 100%;
+  max-width: 100rem;
+  /* max-width: 500px; */
+  height: auto;
+  padding: .7em;
+  border: solid 1px #d1d0d0;
+  border-radius: 5px;
+  
+}
+.p {
+  line-height: 0%;
+}
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+}
+.col {
+  padding-right: 5rem;
+  padding-left: 7rem;
+  /* margin: 16px; */
+    
+  border: 1px solid rgb(224, 195, 31);
+}
+
+.navtop {
+  position: fixed;
+  width: 100%;
+  z-index: 1
+}
+
+.navtop {
+  top: 0
+}
+
+
+/******************************
+Flexbox Layout Mobile
+*******************************/
+
+
+.header,
+.nav,
+.imgResponse,
+.row {
+  display:flex;
+  flex-direction: column;
+}
+
+
+
+.header {
+  justify-content: space-between;
+}
+
+.nav {
+  flex: 1;
+  justify-content: space-around;
+}
+
+
+@media (max-width: 700px) {
+
+  .nav  {
+    padding: 12px 0 12px 0;
+    margin: 0 0 0 -10px;
+
+  }
+  .nav li a:hover {
+    border-radius: 5px;
+    transition: 400ms ease-in-out;
+  }
+
+
+  .nav.responsive  {
+    display: none;
+    
+
+  }
+
+  /* position hamburger icon to right of viewport  */
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+  }
+  .imgResponse {
+    display: none;
+  }
+
+  .hide-small {
+    display: none;
+  }
+
+  .col-top {
+    margin-top: 17.2rem;
+  }  
+
+   .col-top.responsiveA {
+   margin-top: 3.25rem;
+     
+  }
+  
+}
+
+
+@media all and (min-width: 701px) {
+
+   
+  .header,
+  .nav,
+  .row {
+    flex-direction: row;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .col {
+    flex: 1;
+    line-height: normal;
+  }
+ 
+}
+
+@media (max-width:992px) and (min-width:701px) {
+ .hide-medium {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1030px) {
+  .nav {
+    flex: none;
+
+  }
+  .secondary {
+    flex: 2;
+  }
+}
+/* This rule ajusts the width of the Header bar */
+
+/* @media all and (min-width: 1030px) {
+  .header,
+  .response
+     {
+    width: 1100px; 
+    min-width: 768px;
+  }
+ 
+    
+
+} */
