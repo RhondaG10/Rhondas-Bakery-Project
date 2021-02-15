@@ -1,5 +1,5 @@
 /******************************
-Base element styles
+Base Element Styles
 *******************************/
 * {
   box-sizing: border-box;
@@ -7,77 +7,87 @@ Base element styles
 
 body {
   margin: 0;
-  Font-Family: 'Source Sans Pro', Sans-Serif;
-Font-Size: 16px;
-  /* font-family: Helvetica; */
-  /* Font-Family: 'Source Sans Pro', Sans-Serif; */
+  /* Font-Family: 'Raleway', Sans-Serif; */
   
-  /* Font-Family: 'Raleway', Sans-Serif;
-  Font-Size: 20px;  */
-  /* Font-Size: 50px; */
-  /* Font-Size: 16px;   */
-  /* background: #6a6a6a; */
-  line-height: 3;
-  background-color: #e9dada;
+  Font-Family: 'Fira Sans', Sans-Serif;
   
+  Font-Family: 'Overpass', Sans-Serif;
+
+  Font-Size: 15px;
+  line-height: 1.6;
+  background-color: #fdfaf3;
+
 }
 
 h1,
-  
+h2,
+h3,
+h4,
+a {
+  /* Font-Family: 'Vollkorn', Serif; */
+  /* Font-Family: 'Cormorant Garamond', Serif; */
+  Font-Family: 'Permanent Marker', Cursive;
+}
+
 h2,
 h3 {
-  /* Font-Family: 'Playfair Display', Serif;
-  Font-Size: 48px; */
-  /* Font-Family: 'Samantha'; */
-  Font-Family: 'Playfair Display', Serif;
-Font-Size: 48px;
-  
-}
-
-h2 {
   text-align: center;
+  letter-spacing: 5px;
+  text-decoration: underline;
+
+}
+
+h4 {
+  font-size: 1.25rem;
+  text-align: left;
+  letter-spacing: 5px;
 }
 
 
+p.text-grey {
+  color: #757575;
+  font-size: 1.2rem;
+}
 
 .header {
-  padding: 5px 0;
+  padding: 10px 0;
   margin: 0 auto;
-  /* To set width the same as rest, change to 1100 */
-  max-width: 1200px;
-  background-color: #a9e420;
+  max-width: 1150px;
+  background-color: #eed79c;
+  border-radius: 5px;
   border: 1px solid red;
 }
 
 
 .logo {
-  font-size: 28px;
-  font-weight:900;
+  font-size: 24px;
+  font-weight: 900;
   letter-spacing: .1rem;
-  color: #aa0dd1;
-  width: 400px;
+  color: #1414B0;
+  width: 265px;
   background-size: contain;
   white-space: nowrap;
   overflow: hidden;
   margin-left: 50px;
   padding-top: 0;
-  border: 1px solid rgb(31, 33, 187);
-  
+  border: 1px solid greenyellow;
+  text-align: center;
 }
+
 .header {
   position: relative;
 }
+
 .chef {
   position: absolute;
-  top: 2.1rem;
+  top: 1rem;
   left: 2px;
-  
-  
 }
 
 .nav {
   list-style: none;
   border: 1px solid yellow;
+
 }
 
 .nav li {
@@ -86,16 +96,18 @@ h2 {
 
 .nav li a {
   text-decoration: none;
-  color: #4683af;
-  font-size: 14px;
+  color: #2727E2;
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   padding: 8px 16px 7px;
 }
 
 .nav li a:hover {
-  background-color: #FB8804;
+  background-color: #c28434;
   color: black;
-  border-radius: 5%;
+  border-radius: 50% 20% / 10% 40%;
   transition: 300ms ease-in-out;
 }
 
@@ -103,24 +115,13 @@ h2 {
   margin-right: 5px;
 }
 
-/* .nav li:last-child a {
-  background: #FB8804;
-  color: #4683af;
-  border-radius: 2px;
-  transition: 200ms ease-in-out;
-  padding: 8px 16px 7px;
-}
 
-.nav li:last-child a:hover {
-  background:#FB8804 ;
-  color: black;
-} */
 a.icon {
   text-decoration: none;
 }
 
 .fa-bars {
-  color: #FB8804;
+  color: #c28434;
   padding: .15rem;
   border: solid 1px #afa6a6;
   font-size: 25px;
@@ -131,6 +132,7 @@ a.icon {
   background-color: #FB8804;
   color: black;
 }
+
 .imgResponse {
   width: 100%;
   max-width: 1100px;
@@ -138,22 +140,34 @@ a.icon {
   margin: 0 auto;
   padding: .7em;
   border: solid 1px #d1d0d0;
-  border-radius: 10%;
+  border-radius: 0 0 5px 5px;
 }
 
 .feat-img {
   width: 100%;
-  max-width: 100rem;
-  /* max-width: 500px; */
+  max-width: 600px;
   height: auto;
   padding: .7em;
   border: solid 1px #d1d0d0;
   border-radius: 5px;
-  
+
 }
-.p {
-  line-height: 0%;
+
+.feat-img-1 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: .7em;
+  margin: 0 auto;
+  border: solid 1px #d1d0d0;
+  border-radius: 5px;
+
 }
+
+.opacity-min {
+  opacity: 0.75
+}
+
 
 .row {
   width: 100%;
@@ -161,24 +175,21 @@ a.icon {
   height: auto;
   margin: 0 auto;
 }
+
 .col {
-  padding-right: 5rem;
-  padding-left: 7rem;
-  /* margin: 16px; */
-    
+  padding-right: .5rem;
+  padding-left: .5rem;
+  margin-left: 0;
   border: 1px solid rgb(224, 195, 31);
 }
+
 
 .navtop {
   position: fixed;
   width: 100%;
-  z-index: 1
+  top: 0;
+  z-index: 1;
 }
-
-.navtop {
-  top: 0
-}
-
 
 /******************************
 Flexbox Layout Mobile
@@ -188,15 +199,15 @@ Flexbox Layout Mobile
 .header,
 .nav,
 .imgResponse,
-.row {
-  display:flex;
+.row,
+.col {
+  display: flex;
   flex-direction: column;
 }
 
-
-
 .header {
   justify-content: space-between;
+  
 }
 
 .nav {
@@ -205,33 +216,37 @@ Flexbox Layout Mobile
 }
 
 
-@media (max-width: 700px) {
 
-  .nav  {
+@media (max-width: 702px) {
+
+
+  .nav {
     padding: 12px 0 12px 0;
     margin: 0 0 0 -10px;
 
   }
+
   .nav li a:hover {
     border-radius: 5px;
     transition: 400ms ease-in-out;
   }
 
 
-  .nav.responsive  {
+  .nav.responsive {
     display: none;
-    
+
 
   }
 
   /* position hamburger icon to right of viewport  */
 
   .icon {
-    display: block;
+    /* display: block; */
     position: absolute;
-    top: 2.5rem;
+    top: 2rem;
     right: 2rem;
   }
+
   .imgResponse {
     display: none;
   }
@@ -241,39 +256,82 @@ Flexbox Layout Mobile
   }
 
   .col-top {
-    margin-top: 17.2rem;
-  }  
+    margin-top: 22rem;
 
-   .col-top.responsiveA {
-   margin-top: 3.25rem;
-     
   }
-  
+
+  /* This responsiveA is control by javascript  */
+  .col-top.responsiveA {
+    margin-top: 8rem;
+
+
+  }
+
 }
 
 
-@media all and (min-width: 701px) {
+@media all and (min-width: 703px) {
 
-   
-  .header,
-  .nav,
-  .row {
+/* My original nav layout */
+  /* .header, */
+  .nav {
     flex-direction: row;
   }
+
+  /* For centering .header, */
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
 
   .icon {
     display: none;
   }
 
-  .col {
-    flex: 1;
-    line-height: normal;
+  .row {
+
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-between; */
+
   }
- 
+
+  .col {
+    justify-content: first flex-start;
+    border: 1px solid #222;
+  }
+
+
+
+  .primary {
+    width: 33.33%;
+  }
+
+  .secondary {
+    flex: 1 40%;
+  }
+
+  .tertiary {
+    width: 33.33%;
+
+  }
+
+  .primary-1 {
+    flex: 50%;
+  }
+
+  .secondary-1 {
+    flex: 50%;
+
+
+  }
+
 }
 
 @media (max-width:992px) and (min-width:701px) {
- .hide-medium {
+  .hide-medium {
     display: none;
   }
 }
@@ -283,10 +341,45 @@ Flexbox Layout Mobile
     flex: none;
 
   }
-  .secondary {
-    flex: 2;
+
+  .primary {
+    width: 25%;
   }
+
+  .secondary {
+    width: 50%;
+  }
+
+  .tertiary {
+    width: 25%;
+
+  }
+
+  .primary-1 {
+    flex: 60%;
+  }
+
+  .secondary-1 {
+    flex: 40%;
+
+
+  }
+
+
 }
+
+/* justify-content: space-between for new nav bar*/
+@media (min-width: 1025px) {
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+
+}
+
 /* This rule ajusts the width of the Header bar */
 
 /* @media all and (min-width: 1030px) {

@@ -3,22 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Design</title>
+  <title>Rhonda's Bakery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> -->
-  
-  <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass|Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/95583fc785.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- Hamburger Control Using JavaScript onclick function -->
-  <h2 id="home" style="margin-top: -20px;"></h2>
+
+  <span id="home" style="margin-top: -20px;"></span>
   <div class="navtop">
 
     <header class="header">
@@ -26,6 +23,7 @@
       <img class="chef" src="img/Chef.svg" alt="Waiter">
       <h1 class="logo">Bake My Day!<br>Bake Shop and Cafe</h1>
 
+      <!-- Hamburger Control Using JavaScript onclick function -->
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fas fa-bars"></i>
       </a>
@@ -40,24 +38,23 @@
 
 
   </div>
-  <div style="padding-top: 100px;">
-    <img src="https://media.istockphoto.com/photos/cake-display-picture-id873169784?k=6&m=873169784&s=612x612&w=0&h=FPcUUUickfpa18THHCZWcKDHKCaIGzN9i4m_-wsrBow=" alt="Chris standing up holding his daughter Elva" class="imgResponse" height="750">
-
+  <div style="padding-top: 0;">
+    <img class="imgResponse" src="img/pexels-eric-montanah-1397292a.jpg" alt="Cafe Bar Setting">
   </div>
 
-
+  <!-- About Section -->
   <div class="row" id="about">
     <div class="primary col hide-small">
       <h2>Great food</h2>
-      <img class="feat-img " src="img/pexels-chevanon-photography-323682c.jpg" alt="Drinks and eats" width="600"
+      <img class="feat-img " src="img/pexels-chevanon-photography-323682c.jpg" alt="Drinks and eats" width="300"
         height="400">
 
     </div>
     <!--/.primary-->
 
-    <div  class="secondary col" >
+    <div class="secondary col">
       <h2 class="col-top" id="sec-col">About the Cafe</h2>
-      <p>Welcome! Mama Rhonda's Bakery and Cafe is a culinary treat. Come in to satisfy your sweet tooth, or to grab a delicious lunch from our soup sandwich and salad menu.  But why choose.  Have lunch and desert.  We have a large supply of items that can be preordered.  These include donuts by the dozen, cakes, cookies and more.  verything in this cafe is worth waiting in line for.</p>
+      <p>Everything in this cafe is worth waiting in line for.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, fugit neque, architecto repellat suscipit
         sint, omnis qui temporibus ullam labore dolorum. Eaque voluptatibus deserunt itaque qui a cupiditate hic labore.
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laborum quisquam, dolores dolorem exercitationem
@@ -67,12 +64,45 @@
         donuts. sapiente nihil, similique minus possimus magnam hic reprehenderit. Explicabo, iure iste</p>
     </div>
     <!--/.secondary-->
-    <div  class="tertiary col" >
-      <h2>What in the world am I doing?</h2>
-      <p>These columns look ridiculous. I need the lines to be closer.  And where will I put the menu?  Good 'Googely Moogaley' (as Grady used to say
-        1)!</p>
+
+    <div class="tertiary col hide-small">
+      <h2>Great food</h2>
+      <img class="feat-img " src="img/pexels-rajesh-tp-1624487b.jpg" alt="Drinks and eats" width="300" height="400">
 
     </div>
+    <!--/.tertiary-->
+
+  </div>
+
+  <!-- Menu Section -->
+  <div class="row" id="menu">
+    <div class="primary-1 col">
+      <h2>Le Menu</h2>
+      <h4>Bread Basket</h4>
+      <p class="text-grey">Assortment of fresh baked fruit breads and muffins <strong>5.50</strong></p>
+
+      <h4>Honey Almond Granola with Fruits</h4>
+      <p class="text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates <strong>7.00</strong></p>
+
+      <h4>Belgian Waffle</h4>
+      <p class="text-grey">Vanilla flavored batter with malted flour <strong>7.50</strong></p>
+
+      <h4>Scrambled eggs</h4>
+      <p class="text-grey">Scrambled eggs, roasted red pepper, garlic, with green onions <strong>7.50</strong></p>
+
+      <h4>Blueberry Pancakes</h4>
+      <p class="text-grey">With syrup, butter and lots of berries <strong>8.50</strong></p>
+    </div>
+    <!--/.primary-1-->
+
+    <div class="secondary-1 col ">
+      <h2>Great food</h2>
+      <img class="feat-img-1 opacity-min {
+        opacity: 0.75
+      }" src="img/pexels-william-choquette-2641886a.jpg" alt="Drinks and eats" width="300" height="400">
+
+    </div>
+    <!--/.secondary-1-->
 
   </div>
   <script src="js/catering.js"></script>
