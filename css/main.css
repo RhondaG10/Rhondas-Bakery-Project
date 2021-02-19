@@ -14,9 +14,8 @@ body {
   Font-Family: 'Overpass', Sans-Serif;
 
   Font-Size: 15px;
-  line-height: 1.6;
   background-color: #fdfaf3;
-
+  line-height: 0;
 }
 
 h1,
@@ -28,6 +27,14 @@ a {
   /* Font-Family: 'Cormorant Garamond', Serif; */
   Font-Family: 'Permanent Marker', Cursive;
 }
+
+h1,
+h2,
+a, 
+.logo {
+  line-height: 1.6;
+}
+
 
 h2,
 h3 {
@@ -43,6 +50,16 @@ h4 {
   letter-spacing: 5px;
 }
 
+.menu-banner {
+  background-color: #f9eec8;  
+  color: #2727E2;
+  text-align: center;
+}
+
+.sweet-treat-style p {
+  font-size: 18px;
+  color: #6d6868;
+}
 
 p.text-grey {
   color: #757575;
@@ -166,8 +183,8 @@ a.icon {
 }
 
 .feat-img-1 {
-  width: 100%;
-  max-width: 500px;
+  width: 50%;
+  max-width: 400px;
   height: auto;
   padding: .7em;
   margin: 0 auto;
@@ -202,6 +219,61 @@ a.icon {
   top: 0;
   z-index: 1;
 }
+
+.padding-8 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.padding-16 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-20 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.padding-top-20 {
+  padding-top: 1.25rem;
+ }
+
+ .padding-top-24 {
+   padding-top: 1.5rem;
+ }
+
+ .padding-top-30 {
+   padding-top: 1.875rem;
+ }
+ .padding-top-32 {
+   padding-top: 2rem;
+ }
+ 
+ .padding-bottom-8 {
+   padding-bottom: 0.5rem;
+ }
+
+ .padding-bottom-16 {
+   padding-bottom: 1rem;
+ }
+
+.padding-bottom-20 {
+  padding-bottom: 1.25rem;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 1.5rem;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 1.875rem;
+}
+
+.padding-bottom-32 {
+  padding-bottom: 2rem;
+}
+
 
 /******************************
 Flexbox Layout Mobile
@@ -317,8 +389,8 @@ Flexbox Layout Mobile
 
 
 
-  .primary {
-    width: 33.33%;
+  .menu-banner {  /* Menu banner width */
+    width: 100%;
   }
 
   .secondary {
@@ -352,10 +424,6 @@ Flexbox Layout Mobile
   .nav {
     flex: none;
 
-  }
-
-  .primary {
-    width: 25%;
   }
 
   .secondary {
