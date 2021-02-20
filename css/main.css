@@ -186,7 +186,7 @@ a.icon {
 }
 
 .feat-img-1 {
-  width: 50%;
+  width: 90%;
   max-width: 400px;
   height: auto;
   padding: .7em;
@@ -373,6 +373,16 @@ Flexbox Layout Mobile
 
 
   }
+  .feat-img-1 {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: .7em;
+    margin: 0 auto;
+    border: solid 1px #d1d0d0;
+    border-radius: 5px;
+  
+  }
 
 }
 
@@ -431,8 +441,18 @@ Flexbox Layout Mobile
 
   .secondary-1 {
     flex: 50%;
+  }
 
+  .about-section-1 {
+    width: 33.33%;
+  }
 
+  .about-section-2 {
+    width: 33.33%;
+  }
+
+  .about-section-3 {
+    width: 33.33%;
   }
 
 }
@@ -440,6 +460,9 @@ Flexbox Layout Mobile
 @media (max-width:992px) and (min-width:701px) {
   .hide-medium {
     display: none;
+  }
+  h4 p {
+    text-align: justify;
   }
 }
 
@@ -467,7 +490,17 @@ Flexbox Layout Mobile
 
 
   }
+  .about-section-1 {
+    width: 25%;
+  }
 
+  .about-section-2 {
+    width: 50%;
+  }
+
+  .about-section-3 {
+    width: 25%;
+  }
 
 }
 
