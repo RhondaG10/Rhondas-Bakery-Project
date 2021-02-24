@@ -28,6 +28,37 @@ a {
   Font-Family: 'Permanent Marker', Cursive;
 }
 
+h2 {
+
+  position: relative;
+
+}
+
+
+h2 .menu {
+
+  position: absolute;
+
+  top: -150px;
+
+}
+
+h2 .about {
+
+  position: absolute;
+
+  top: -150px;
+
+}
+
+h2 .contact {
+
+  position: absolute;
+
+  top: -150px;
+
+}
+
 h1,
 h2,
 a,
@@ -74,7 +105,7 @@ p.text-grey {
 .header {
   padding: 10px 0;
   margin: 0 auto;
-  max-width: 1150px;
+  max-width: 1100px;
   background-color: #B89414;
   border-radius: 5px;
   border: 1px solid red;
@@ -226,6 +257,8 @@ a.icon {
   z-index: 1;
 }
 
+
+
 .form-input {
 
   padding: 8px;
@@ -272,6 +305,17 @@ a.icon {
 
 }
 
+.footer {
+  width: 100%;
+  max-width: 1100px;
+  line-height: 1;
+  margin: 0 auto;
+  height: auto;
+  padding: 2em 0;
+  background-color: #a97142;
+  color: white;
+  text-align: center;
+}
 
 .padding-8 {
   padding-top: .5rem;
