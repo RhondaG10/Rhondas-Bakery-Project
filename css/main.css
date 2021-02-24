@@ -8,9 +8,9 @@ Base Element Styles
 body {
   margin: 0;
   /* Font-Family: 'Raleway', Sans-Serif; */
-  
+
   Font-Family: 'Fira Sans', Sans-Serif;
-  
+
   Font-Family: 'Overpass', Sans-Serif;
 
   Font-Size: 15px;
@@ -30,7 +30,7 @@ a {
 
 h1,
 h2,
-a, 
+a,
 .logo {
   line-height: 1.6;
 }
@@ -49,12 +49,14 @@ h4 {
   text-align: left;
   letter-spacing: 5px;
 }
+
 p {
   line-height: 1;
 }
 
-.menu-banner {
-  background-color: #f9eec8;  
+.menu-banner,
+.contact-banner {
+  background-color: #f9eec8;
   color: #2727E2;
   text-align: center;
 }
@@ -104,6 +106,7 @@ h1.logo {
   position: relative;
 
 }
+
 .chefHat {
   position: absolute;
   top: -8px;
@@ -223,6 +226,53 @@ a.icon {
   z-index: 1;
 }
 
+.form-input {
+
+  padding: 8px;
+
+  border: none;
+
+  border-bottom: 1px solid #ccc;
+
+  width: 100%
+}
+
+.form-button {
+
+  border: none;
+
+  padding: 8px 16px;
+
+  vertical-align: middle;
+
+  text-decoration: none;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  margin-top: 16px;
+
+  margin-bottom: 16px;
+
+  background-color: #a97142;
+
+}
+
+
+.form-button:hover {
+
+  color: #fff;
+
+  background-color: #1414B0;
+
+  border-radius: 5px;
+
+}
+
+
 .padding-8 {
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -248,24 +298,25 @@ a.icon {
 
 .padding-top-20 {
   padding-top: 1.25rem;
- }
+}
 
- .padding-top-24 {
-   padding-top: 1.5rem;
- }
+.padding-top-24 {
+  padding-top: 1.5rem;
+}
 
- .padding-top-30 {
-   padding-top: 1.875rem;
- }
- .padding-top-32 {
-   padding-top: 2rem;
- }
- 
- .padding-top-50 {
+.padding-top-30 {
+  padding-top: 1.875rem;
+}
+
+.padding-top-32 {
+  padding-top: 2rem;
+}
+
+.padding-top-50 {
   padding-top: 3.125rem;
 }
 
- .padding-top-64 {
+.padding-top-64 {
   padding-top: 4rem;
 }
 
@@ -273,13 +324,13 @@ a.icon {
   padding-top: 5.313rem;
 }
 
- .padding-bottom-8 {
-   padding-bottom: 0.5rem;
- }
+.padding-bottom-8 {
+  padding-bottom: 0.5rem;
+}
 
- .padding-bottom-16 {
-   padding-bottom: 1rem;
- }
+.padding-bottom-16 {
+  padding-bottom: 1rem;
+}
 
 .padding-bottom-20 {
   padding-bottom: 1.25rem;
@@ -314,7 +365,7 @@ Flexbox Layout Mobile
 
 .header {
   justify-content: space-between;
-  
+
 }
 
 .nav {
@@ -373,6 +424,7 @@ Flexbox Layout Mobile
 
 
   }
+
   .feat-img-1 {
     width: 90%;
     max-width: 300px;
@@ -381,7 +433,7 @@ Flexbox Layout Mobile
     margin: 0 auto;
     border: solid 1px #d1d0d0;
     border-radius: 5px;
-  
+
   }
 
 }
@@ -389,7 +441,7 @@ Flexbox Layout Mobile
 
 @media all and (min-width: 703px) {
 
-/* My original nav layout */
+  /* My original nav layout */
   /* .header, */
   .nav {
     flex-direction: row;
@@ -422,25 +474,33 @@ Flexbox Layout Mobile
 
 
 
-  .menu-banner {  /* Menu banner width */
+  .menu-banner {
+    /* Menu banner width */
     width: 100%;
   }
 
-  .secondary {
-    flex: 1 40%;
+  .sweet-treats {
+    width: 50%
   }
 
-  .tertiary {
-    width: 33.33%;
-
+  .sweet-treats-1 {
+    width: 50%
   }
 
-  .primary-1 {
-    flex: 50%;
+  .savory-treats {
+    width: 50%
   }
 
-  .secondary-1 {
-    flex: 50%;
+  .savory-treats-1 {
+    width: 50%
+  }
+
+  .delicious-drinks {
+    width: 50%
+  }
+
+  .delicious-drinks-1 {
+    width: 50%
   }
 
   .about-section-1 {
@@ -455,12 +515,28 @@ Flexbox Layout Mobile
     width: 33.33%;
   }
 
+  .contact-banner {
+    /* Contact banner width */
+    width: 100%;
+  }
+
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .contact-form-1 {
+    width: 50%;
+  }
+
+
 }
 
 @media (max-width:992px) and (min-width:701px) {
   .hide-medium {
     display: none;
   }
+
   h4 p {
     text-align: justify;
   }
@@ -469,27 +545,32 @@ Flexbox Layout Mobile
 @media all and (min-width: 1030px) {
   .nav {
     flex: none;
-
   }
 
-  .secondary {
-    width: 50%;
+  .sweet-treats {
+    width: 60%
   }
 
-  .tertiary {
-    width: 25%;
-
+  .sweet-treats-1 {
+    width: 40%
   }
 
-  .primary-1 {
-    flex: 60%;
+  .savory-treats {
+    width: 40%
   }
 
-  .secondary-1 {
-    flex: 40%;
-
-
+  .savory-treats-1 {
+    width: 60%
   }
+
+  .delicious-drinks {
+    width: 60%
+  }
+
+  .delicious-drinks-1 {
+    width: 40%
+  }
+
   .about-section-1 {
     width: 25%;
   }
@@ -501,6 +582,16 @@ Flexbox Layout Mobile
   .about-section-3 {
     width: 25%;
   }
+
+  .contact-form {
+    width: 40%;
+  }
+
+  .contact-form-1 {
+    width: 60%;
+  }
+
+
 
 }
 
@@ -510,7 +601,7 @@ Flexbox Layout Mobile
   .header {
     flex-direction: row;
     justify-content: space-between;
-    
+
   }
 
 
