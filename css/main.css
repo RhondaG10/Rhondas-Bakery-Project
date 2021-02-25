@@ -420,7 +420,29 @@ Flexbox Layout Mobile
 
 
 @media (max-width: 702px) {
+  h2 .menu {
 
+    position: absolute;
+
+    top: -330px;
+
+  }
+
+  h2 .about {
+
+    position: absolute;
+
+    top: -340px;
+
+  }
+
+  h2 .contact {
+
+    position: absolute;
+
+    top: -335px;
+
+  }
 
   .nav {
     padding: 12px 0 12px 0;
@@ -458,13 +480,13 @@ Flexbox Layout Mobile
   }
 
   .col-top {
-    margin-top: 22rem;
+    margin-top: 12.5rem;
 
   }
 
   /* This responsiveA is control by javascript  */
   .col-top.responsiveA {
-    margin-top: 8rem;
+    margin-top: -1rem;
 
 
   }
@@ -482,8 +504,9 @@ Flexbox Layout Mobile
 
 }
 
-
 @media all and (min-width: 703px) {
+
+
 
   /* My original nav layout */
   /* .header, */
