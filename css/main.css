@@ -7,13 +7,9 @@ Base Element Styles
 
 body {
   margin: 0;
-  /* Font-Family: 'Raleway', Sans-Serif; */
-
-  Font-Family: 'Fira Sans', Sans-Serif;
-
-  Font-Family: 'Overpass', Sans-Serif;
-
-  Font-Size: 15px;
+  font-family: "Fira Sans", Sans-Serif;
+  font-family: "Overpass", Sans-Serif;
+  font-size: 15px;
   background-color: #fdfaf3;
   line-height: 0;
 }
@@ -23,40 +19,34 @@ h2,
 h3,
 h4,
 a {
-  /* Font-Family: 'Vollkorn', Serif; */
-  /* Font-Family: 'Cormorant Garamond', Serif; */
-  Font-Family: 'Permanent Marker', Cursive;
+  font-family: "Permanent Marker", Cursive;
 }
-
+/* These rules make my nav buttons link to the correct areas on the screen */
 h2 {
-
   position: relative;
-
 }
 
+h2 .home {
+  position: absolute;
+  top: -150px;
+}
 
 h2 .menu {
-
   position: absolute;
 
   top: -150px;
-
 }
 
 h2 .about {
-
   position: absolute;
 
   top: -150px;
-
 }
 
 h2 .contact {
-
   position: absolute;
 
   top: -150px;
-
 }
 
 h1,
@@ -66,13 +56,11 @@ a,
   line-height: 1.6;
 }
 
-
 h2,
 h3 {
   text-align: center;
   letter-spacing: 5px;
   text-decoration: underline;
-
 }
 
 h4 {
@@ -88,8 +76,9 @@ p {
 .menu-banner,
 .contact-banner {
   background-color: #f9eec8;
-  color: #2727E2;
+  color: #2727e2;
   text-align: center;
+  box-shadow: inset 0 0 5px 5px rgba(167, 137, 5, 0.8);
 }
 
 .sweet-treat-style p {
@@ -106,24 +95,24 @@ p.text-grey {
   padding: 10px 0;
   margin: 0 auto;
   max-width: 1100px;
-  background-color: #B89414;
+  background-color: #b89414;
   border-radius: 5px;
-  border: 1px solid red;
+  box-shadow: inset 0 0 10px 10px rgba(104, 81, 17, 0.8);
+  /* border: 1px solid red; */
 }
-
 
 .logo {
   font-size: 24px;
   font-weight: 900;
-  letter-spacing: .1rem;
-  color: #1414B0;
+  letter-spacing: 0.1rem;
+  color: #1414b0;
   width: 265px;
   background-size: contain;
   white-space: nowrap;
   overflow: hidden;
   margin-left: 50px;
   padding-top: 0;
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   text-align: center;
 }
 
@@ -135,7 +124,6 @@ p.text-grey {
  hat img .chefHat - the child - can be positioned to follow the logo */
 h1.logo {
   position: relative;
-
 }
 
 .chefHat {
@@ -149,54 +137,74 @@ h1.logo {
   top: -8px;
   right: -5px;
 }
-
+/* ----------------navigation styles----------------- */
 .nav {
   list-style: none;
-  border: 1px solid yellow;
-
+  /* border: 1px solid yellow; */
 }
 
 .nav li {
   margin: 12px 0 12px 18px;
 }
-
+.top,
 .nav li a {
   text-decoration: none;
-  color: #2727E2;
-  font-size: .95rem;
+  color: #2727e2;
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   padding: 8px 16px 7px;
 }
 
 .nav li a:hover {
-  background-color: #c28434;
-  color: black;
-  border-radius: 50% 20% / 10% 40%;
+  background-color: #6e4106;
+  color: white;
+  border-radius: 5px;
   transition: 300ms ease-in-out;
 }
-
+/* This rule gives the contact button, 'last-child', 5px of right margin. This prevents it from being contact from being right against the header banner */
 .nav li:last-child {
   margin-right: 5px;
 }
-
 
 a.icon {
   text-decoration: none;
 }
 
 .fa-bars {
-  color: #c28434;
-  padding: .15rem;
+  color: #f1efeb;
+  padding: 0.15rem;
   border: solid 1px #afa6a6;
   font-size: 25px;
 }
 
-
 .fa-bars:hover {
-  background-color: #FB8804;
+  background-color: #6a6aec;
   color: black;
+}
+/* --------------------Page elements----------------------- */
+.main-image {
+  position: relative;
+}
+
+.display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.text-white {
+  color: rgba(255, 255, 255, 0.986);
+}
+
+.bg-color {
+  background-color: rgba(27, 26, 26, 0.1);
+  border-radius: 3px;
+}
+.padding-RL-8 {
+  padding: 0 1rem;
 }
 
 .imgResponse {
@@ -204,7 +212,7 @@ a.icon {
   max-width: 1100px;
   height: auto;
   margin: 0 auto;
-  padding: .7em;
+  padding: 0.7em;
   border: solid 1px #d1d0d0;
   border-radius: 0 0 5px 5px;
 }
@@ -213,27 +221,20 @@ a.icon {
   width: 100%;
   max-width: 600px;
   height: auto;
-  padding: .7em;
+  padding: 0.7em;
   border: solid 1px #d1d0d0;
   border-radius: 5px;
-
 }
 
 .feat-img-1 {
   width: 90%;
   max-width: 400px;
   height: auto;
-  padding: .7em;
+  padding: 0.7em;
   margin: 0 auto;
   border: solid 1px #d1d0d0;
   border-radius: 5px;
-
 }
-
-.opacity-min {
-  opacity: 0.75
-}
-
 
 .row {
   width: 100%;
@@ -243,12 +244,13 @@ a.icon {
 }
 
 .col {
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin-left: 0;
-  border: 1px solid rgb(224, 195, 31);
+  border-top: 0.031rem solid rgb(214, 212, 212);
+  border-bottom: 0.031rem solid rgb(214, 212, 212);
+  /* border: 1px solid rgb(224, 195, 31); */
 }
-
 
 .navtop {
   position: fixed;
@@ -257,52 +259,30 @@ a.icon {
   z-index: 1;
 }
 
-
-
 .form-input {
-
   padding: 8px;
-
   border: none;
-
   border-bottom: 1px solid #ccc;
-
-  width: 100%
+  width: 100%;
 }
 
 .form-button {
-
   border: none;
-
   padding: 8px 16px;
-
   vertical-align: middle;
-
   text-decoration: none;
-
   text-align: center;
-
   cursor: pointer;
-
   white-space: nowrap;
-
   margin-top: 16px;
-
   margin-bottom: 16px;
-
   background-color: #a97142;
-
 }
 
-
 .form-button:hover {
-
   color: #fff;
-
-  background-color: #1414B0;
-
+  background-color: #1414b0;
   border-radius: 5px;
-
 }
 
 .footer {
@@ -317,9 +297,317 @@ a.icon {
   text-align: center;
 }
 
+/******************************
+Flexbox Layout Mobile
+*******************************/
+
+.header,
+.nav,
+.imgResponse,
+.row,
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.nav {
+  flex: 1;
+  justify-content: space-around;
+}
+
+/* ================================================= 
+   Media Queries
+==================================================== */
+
+/* Target viewport sizes less than 702px
+This CSS will apply styles only if your browser's 
+viewport width is equal to or narrower than 702px: */
+
+@media (max-width: 702px) {
+  h2 .menu {
+    position: absolute;
+
+    top: -330px;
+  }
+
+  h2 .about {
+    position: absolute;
+
+    top: -340px;
+  }
+
+  h2 .contact {
+    position: absolute;
+
+    top: -335px;
+  }
+
+  .nav {
+    padding: 12px 0 12px 0;
+    margin: 0 0 0 -10px;
+  }
+
+  .nav li a:hover {
+    border-radius: 5px;
+    transition: 400ms ease-in-out;
+  }
+
+  .nav.responsive {
+    display: none;
+  }
+
+  /* position hamburger icon to right of viewport  */
+
+  .icon {
+    /* display: block; */
+    position: absolute;
+    top: 2rem;
+    left: calc(100vw - 12%);
+  }
+
+  .imgResponse {
+    display: none;
+  }
+
+  .hide-small {
+    display: none;
+  }
+
+  .col-top {
+    margin-top: 12.5rem;
+  }
+
+  /* This responsiveA is control by javascript  */
+  .col-top.responsiveA {
+    margin-top: -1rem;
+  }
+
+  .feat-img-1 {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: 0.7em;
+    margin: 0 auto;
+    border: solid 1px #d1d0d0;
+    border-radius: 5px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+}
+/* Target viewport sizes 703px and wider 
+This CSS will apply styles only if your browser's 
+viewport width is equal to or wider than 703px:*/
+
+@media all and (min-width: 703px) {
+  /* My original nav layout */
+  /* .header, */
+  .nav {
+    flex-direction: row;
+  }
+
+  /* For centering .header, */
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .row {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-between; */
+  }
+
+  .col {
+    justify-content: first flex-start;
+    /* border: 1px solid #222; */
+  }
+
+  .menu-banner {
+    /* Menu banner width */
+    width: 100%;
+  }
+
+  .sweet-treats {
+    width: 50%;
+    order: 1;
+  }
+
+  .sweet-treats-1 {
+    width: 50%;
+  }
+
+  .savory-treats {
+    width: 50%;
+    order: 1;
+  }
+
+  .savory-treats-1 {
+    width: 50%;
+  }
+
+  .delicious-drinks {
+    width: 50%;
+  }
+
+  .delicious-drinks-1 {
+    width: 50%;
+  }
+
+  .about-section-1 {
+    width: 33.33%;
+  }
+
+  .about-section-2 {
+    width: 33.33%;
+  }
+
+  .about-section-3 {
+    width: 33.33%;
+  }
+
+  .contact-banner {
+    /* Contact banner width */
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .contact-form-1 {
+    width: 50%;
+  }
+}
+/* Target a viewport range wider than 701px and narrower than 992px 
+This CSS will apply styles only if your browser's 
+viewport width is equal to or wider than 701px:
+AND equal to or narrower than 991px:*/
+
+@media (max-width: 992px) and (min-width: 701px) {
+  h2 .home {
+    position: absolute;
+
+    top: -300px;
+  }
+  h2 .menu {
+    position: absolute;
+
+    top: -230px;
+  }
+
+  h2 .about {
+    position: absolute;
+
+    top: -230px;
+  }
+
+  h2 .contact {
+    position: absolute;
+
+    top: -230px;
+  }
+  .hide-medium {
+    display: none;
+  }
+  .main-image {
+    margin-top: 5rem;
+  }
+  h4 p {
+    text-align: justify;
+  }
+}
+/* Target viewport sizes 1030px and wider 
+This CSS will apply styles only if your browser's 
+viewport width is equal to or wider than 1030pxpx:*/
+@media all and (min-width: 1030px) {
+  .nav {
+    flex: none;
+  }
+
+  .sweet-treats {
+    width: 60%;
+    order: initial;
+  }
+
+  .sweet-treats-1 {
+    width: 40%;
+  }
+
+  .savory-treats {
+    width: 40%;
+    order: initial;
+  }
+
+  .savory-treats-1 {
+    width: 60%;
+  }
+
+  .delicious-drinks {
+    width: 60%;
+  }
+
+  .delicious-drinks-1 {
+    width: 40%;
+  }
+
+  .about-section-1 {
+    width: 25%;
+  }
+
+  .about-section-2 {
+    width: 50%;
+  }
+
+  .about-section-3 {
+    width: 25%;
+  }
+
+  .contact-form {
+    width: 40%;
+  }
+
+  .contact-form-1 {
+    width: 60%;
+  }
+}
+
+/* justify-content: space-between for new nav bar*/
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* This rule ajusts the width of the Header bar */
+
+/* @media all and (min-width: 1030px) {
+  .header,
+  .response
+     {
+    width: 1100px; 
+    min-width: 768px;
+  }
+ 
+    
+
+} */
+
+/* Utilities */
 .padding-8 {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .padding-16 {
@@ -392,298 +680,6 @@ a.icon {
   padding-bottom: 2rem;
 }
 
-
-/******************************
-Flexbox Layout Mobile
-*******************************/
-
-
-.header,
-.nav,
-.imgResponse,
-.row,
-.col {
-  display: flex;
-  flex-direction: column;
+.opacity-min {
+  opacity: 0.75;
 }
-
-.header {
-  justify-content: space-between;
-
-}
-
-.nav {
-  flex: 1;
-  justify-content: space-around;
-}
-
-
-
-@media (max-width: 702px) {
-  h2 .menu {
-
-    position: absolute;
-
-    top: -330px;
-
-  }
-
-  h2 .about {
-
-    position: absolute;
-
-    top: -340px;
-
-  }
-
-  h2 .contact {
-
-    position: absolute;
-
-    top: -335px;
-
-  }
-
-  .nav {
-    padding: 12px 0 12px 0;
-    margin: 0 0 0 -10px;
-
-  }
-
-  .nav li a:hover {
-    border-radius: 5px;
-    transition: 400ms ease-in-out;
-  }
-
-
-  .nav.responsive {
-    display: none;
-
-
-  }
-
-  /* position hamburger icon to right of viewport  */
-
-  .icon {
-    /* display: block; */
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-  }
-
-  .imgResponse {
-    display: none;
-  }
-
-  .hide-small {
-    display: none;
-  }
-
-  .col-top {
-    margin-top: 12.5rem;
-
-  }
-
-  /* This responsiveA is control by javascript  */
-  .col-top.responsiveA {
-    margin-top: -1rem;
-
-
-  }
-
-  .feat-img-1 {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-    padding: .7em;
-    margin: 0 auto;
-    border: solid 1px #d1d0d0;
-    border-radius: 5px;
-
-  }
-
-}
-
-@media all and (min-width: 703px) {
-
-
-
-  /* My original nav layout */
-  /* .header, */
-  .nav {
-    flex-direction: row;
-  }
-
-  /* For centering .header, */
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .icon {
-    display: none;
-  }
-
-  .row {
-
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* flex-flow: row wrap; */
-    /* justify-content: space-between; */
-
-  }
-
-  .col {
-    justify-content: first flex-start;
-    border: 1px solid #222;
-  }
-
-
-
-  .menu-banner {
-    /* Menu banner width */
-    width: 100%;
-  }
-
-  .sweet-treats {
-    width: 50%
-  }
-
-  .sweet-treats-1 {
-    width: 50%
-  }
-
-  .savory-treats {
-    width: 50%
-  }
-
-  .savory-treats-1 {
-    width: 50%
-  }
-
-  .delicious-drinks {
-    width: 50%
-  }
-
-  .delicious-drinks-1 {
-    width: 50%
-  }
-
-  .about-section-1 {
-    width: 33.33%;
-  }
-
-  .about-section-2 {
-    width: 33.33%;
-  }
-
-  .about-section-3 {
-    width: 33.33%;
-  }
-
-  .contact-banner {
-    /* Contact banner width */
-    width: 100%;
-  }
-
-
-  .contact-form {
-    width: 50%;
-  }
-
-  .contact-form-1 {
-    width: 50%;
-  }
-
-
-}
-
-@media (max-width:992px) and (min-width:701px) {
-  .hide-medium {
-    display: none;
-  }
-
-  h4 p {
-    text-align: justify;
-  }
-}
-
-@media all and (min-width: 1030px) {
-  .nav {
-    flex: none;
-  }
-
-  .sweet-treats {
-    width: 60%
-  }
-
-  .sweet-treats-1 {
-    width: 40%
-  }
-
-  .savory-treats {
-    width: 40%
-  }
-
-  .savory-treats-1 {
-    width: 60%
-  }
-
-  .delicious-drinks {
-    width: 60%
-  }
-
-  .delicious-drinks-1 {
-    width: 40%
-  }
-
-  .about-section-1 {
-    width: 25%;
-  }
-
-  .about-section-2 {
-    width: 50%;
-  }
-
-  .about-section-3 {
-    width: 25%;
-  }
-
-  .contact-form {
-    width: 40%;
-  }
-
-  .contact-form-1 {
-    width: 60%;
-  }
-
-
-
-}
-
-/* justify-content: space-between for new nav bar*/
-@media (min-width: 1025px) {
-
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-
-  }
-
-
-}
-
-/* This rule ajusts the width of the Header bar */
-
-/* @media all and (min-width: 1030px) {
-  .header,
-  .response
-     {
-    width: 1100px; 
-    min-width: 768px;
-  }
- 
-    
-
-} */

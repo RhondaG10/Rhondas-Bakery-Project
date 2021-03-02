@@ -25,7 +25,6 @@
   </head>
 
   <body>
-    <span id="home" style="margin-top: -20px"></span>
     <div class="navtop">
       <header class="header">
         <h1 class="logo">
@@ -38,7 +37,7 @@
         </h1>
 
         <!-- Hamburger Control Using JavaScript onclick function -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerControl()">
           <i class="fas fa-bars"></i>
         </a>
         <ul class="nav" id="myTopnav">
@@ -49,10 +48,27 @@
         </ul>
       </header>
     </div>
-    <div style="padding-top: 8.3rem">
+    <div class="main-image" style="padding-top: 7rem">
+      <h2><span class="home" id="home"></span></h2>
+      <div class="display-middle text-white hide-small">
+        <h1
+          class="bg-color padding-RL-8"
+          style="letter-spacing: 0.3rem; font-size: 5vmax"
+        >
+          Bake My Day!
+        </h1>
+
+        <p
+          class="bg-color"
+          style="letter-spacing: 0.1rem; text-align: center; font-size: 2vmax"
+        >
+          <b>Bake Shop and Cafe</b>
+        </p>
+      </div>
+
       <img
         class="imgResponse"
-        src="img/pexels-eric-montanah-1397292a.jpg"
+        src="img/pexels-roman-odintsov-4552113BB.jpg"
         alt="icedCrossaints"
       />
     </div>
@@ -71,14 +87,13 @@
         <h2>Sweet Treats</h2>
         <main></main>
         <!-- insert javascript multidimensional array food items -->
-        
       </div>
       <!--/end sweet-treats-->
       <!--/sweet-treats picture-->
       <div class="sweet-treats-1 col padding-8">
         <img
           class="feat-img-1"
-          src="img/pexels-william-choquette-2641886a.jpg"
+          src="img/pexels-maria-orlova-4946407A.jpg"
           alt="Drinks and eats"
           width="500"
           height="750"
@@ -93,7 +108,7 @@
       <div class="savory-treats col padding-8">
         <img
           class="feat-img-1 hide-small"
-          src="img/pexels-william-choquette-2641886a.jpg"
+          src="img/Vegetable-beef-soup-8a.jpg"
           alt="Drinks and eats"
           width="500"
           height="750"
@@ -138,7 +153,7 @@
       <div class="delicious-drinks-1 col padding-8">
         <img
           class="feat-img-1 hide-small"
-          src="img/pexels-william-choquette-2641886a.jpg"
+          src="img/pexels-anna-kanifatova-4252560A.jpg"
           alt="Drinks and eats"
           width="500"
           height="750"
@@ -151,7 +166,7 @@
       <div class="about-section-1 padding-8 col">
         <img
           class="feat-img hide-small"
-          src="img/pexels-william-choquette-2641886a.jpg"
+          src="img/pexels-wendy-wei-1674064A.jpg"
           alt="Drinks and eats"
           width="500"
           height="750"
@@ -184,7 +199,7 @@
       <div class="about-section-3 padding-8 col">
         <img
           class="feat-img hide-small"
-          src="img/pexels-william-choquette-2641886a.jpg"
+          src="img/Quick-Cucumber-Caprese-Salad-or-Pasta-Salad-Recipe-2-1 (1)a.jpg"
           alt="Drinks and eats"
           width="500"
           height="750"
@@ -203,7 +218,6 @@
 
     <div class="row">
       <div class="contact-form col">
-        
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam,
@@ -228,62 +242,61 @@
           consequat.
         </p>
       </div>
-   
-   
 
-    <div class="contact-form-1 col">
-      <form action="/action_page.php" target="_blank">
-        <p>
-          <input
-            class="form-input padding-16"
-            type="text"
-            placeholder="Name"
-            required
-            name="Name"
-          />
-        </p>
+      <div class="contact-form-1 col">
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="form-input padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
 
-        <p>
-          <input
-            class="form-input padding-16"
-            type="number"
-            placeholder="How many people"
-            required
-            name="People"
-          />
-        </p>
+          <p>
+            <input
+              class="form-input padding-16"
+              type="number"
+              placeholder="How many people"
+              required
+              name="People"
+            />
+          </p>
 
-        <p>
-          <input
-            class="form-input padding-16"
-            type="datetime-local"
-            placeholder="Date and time"
-            required
-            name="date"
-            value="2021-02-18T16:00"
-          />
-        </p>
+          <p>
+            <input
+              class="form-input padding-16"
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              name="date"
+              value="2021-02-18T16:00"
+            />
+          </p>
 
-        <p>
-          <input
-            class="form-input padding-16"
-            type="text"
-            placeholder="Message \ Special requirements"
-            required
-            name="Message"
-          />
-        </p>
+          <p>
+            <input
+              class="form-input padding-16"
+              type="text"
+              placeholder="Message \ Special requirements"
+              required
+              name="Message"
+            />
+          </p>
 
-        <p><button class="form-button" type="submit">SEND MESSAGE</button></p>
-      </form>
+          <p><button class="form-button" type="submit">SEND MESSAGE</button></p>
+        </form>
+      </div>
     </div>
-    </div>
-    
+
     <footer class="footer">
-     <span>&copy;2021 Louisville, KY - Bake My Day Bake Shop and Cafe.</span><br>
+      <span>&copy;2021 Louisville, KY - Bake My Day Bake Shop and Cafe.</span
+      ><br />
 
-<a class="top" href="#top">Back to top &raquo;</a>
+      <a class="top" href="#top">Back to top &raquo;</a>
     </footer>
-   <script src="js/catering.js"></script>
+    <script src="js/bakery.js"></script>
   </body>
 </html>
