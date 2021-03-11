@@ -356,7 +356,7 @@ viewport width is equal to or narrower than 702px: */
     transition: 400ms ease-in-out;
   }
 
-  .nav.responsive {
+  .nav.navControl {
     display: none;
   }
 
@@ -377,12 +377,12 @@ viewport width is equal to or narrower than 702px: */
     display: none;
   }
 
-  .col-top {
+  .menu-section-top {
     margin-top: 12.5rem;
   }
 
-  /* This responsiveA is control by javascript  */
-  .col-top.responsiveA {
+  /* This menuSectionControl is control by javascript  */
+  .menu-section-top.menuSectionControl {
     margin-top: -1rem;
   }
 
@@ -429,7 +429,7 @@ viewport width is equal to or wider than 703px:*/
   }
 
   .col {
-    justify-content: first flex-start;
+    justify-content: flex-start;
     /* border: 1px solid #222; */
   }
 

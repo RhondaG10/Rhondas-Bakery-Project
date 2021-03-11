@@ -1,20 +1,22 @@
 // Hamburger toggle control
 function hamburgerControl() {
-  // Gather elements by id attributes
-  var x = document.getElementById("myTopnav");
-  var b = document.getElementById("sec-col");
+  // Gather elements by id attributes and assign variables to them
+  let myTopNav = document.getElementById("myTopnav");
+  console.log(myTopNav);
+  let menuSection = document.getElementById("menuSection");
 
-  // This decision displays on and off the nav anchors in mobile @media (max-width: 702px)
-  if (x.className === "nav") {
-    x.className += " responsive";
+  // This decision displays on and off the nav items in mobile, the class "navControl" is dynamically inserted into html to accomplish this control myTopNav.className stores the elements class name that toggles between "nav" or "nav navControl" when the hamburger icon is clicked.
+  if (myTopNav.className === "nav") {
+    myTopNav.className += " navControl"; // myTopNav.className changes class to "nav navControl" this removes nav links when the hamburger icon is clicked see main.css
   } else {
-    x.className = "nav";
+    myTopNav.className = "nav"; // myTopNav.className changes class back to "nav" this displays nav links when the hamburger icon is clicked see main.css
   }
-  // This decision controls the margin top of the menu section in mobile @media (max-width: 702px)
-  if (b.className === "col-top") {
-    b.className += " responsiveA";
+  // This decision controls the margin top of the menu banner section in mobile, the class "menuSectionControl" is dynamically inserted into html to accomplish this control menuSection.className stores the elements class name that could be "menu-section-top" or "menu-section-top menuSectionControl" when the hamburger icon is clicked..
+
+  if (menuSection.className === "menu-section-top") {
+    menuSection.className += " menuSectionControl"; // menuSection.className changes class to "menu-section-top menuSectionControl" this affects the menu banner section margin-top when the hamburger icon is clicked see main.css
   } else {
-    b.className = "col-top";
+    menuSection.className = "menu-section-top"; // menuSection.className changes class back to "menu-section-top" affects margin-top when the hamburger icon is clicked see main.css
   }
 }
 
@@ -57,5 +59,5 @@ function createListItems(arr) {
 }
 
 // Insert foodlist into the main element in the menu section content in index.html file
-
-document.querySelector("main").innerHTML = `${createListItems(foodlist)}`;
+const foodItems = createListItems(foodlist);
+document.querySelector("main").innerHTML = foodItems;
