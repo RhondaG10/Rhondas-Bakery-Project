@@ -350,12 +350,7 @@ viewport width is equal to or narrower than 702px: */
     padding: 12px 0 12px 0;
     margin: 0 0 0 -10px;
   }
-
-  .nav li a:hover {
-    border-radius: 5px;
-    transition: 400ms ease-in-out;
-  }
-
+  /* navControl is controlled by JavaScript */
   .nav.navControl {
     display: none;
   }
@@ -386,7 +381,8 @@ viewport width is equal to or narrower than 702px: */
     margin-top: -1rem;
   }
 
-  .feat-img-1 {
+  .feat-img-1,
+  .feat-img {
     width: 90%;
     max-width: 300px;
     height: auto;
@@ -399,12 +395,38 @@ viewport width is equal to or narrower than 702px: */
   .logo {
     margin-left: 0;
   }
+  .savory-treats {
+    order: 2;
+  }
 }
 /* Target viewport sizes 703px and wider 
 This CSS will apply styles only if your browser's 
 viewport width is equal to or wider than 703px:*/
 
 @media all and (min-width: 703px) {
+  /* This code positions nav links */
+  h2 .home {
+    position: absolute;
+
+    top: -300px;
+  }
+  h2 .menu {
+    position: absolute;
+
+    top: -230px;
+  }
+
+  h2 .about {
+    position: absolute;
+
+    top: -230px;
+  }
+
+  h2 .contact {
+    position: absolute;
+
+    top: -230px;
+  }
   /* My original nav layout */
   /* .header, */
   .nav {
@@ -416,7 +438,7 @@ viewport width is equal to or wider than 703px:*/
     flex-direction: column;
     align-items: center;
   }
-
+  /* Remove hamburger icon in medium to large veiwports */
   .icon {
     display: none;
   }
@@ -437,7 +459,7 @@ viewport width is equal to or wider than 703px:*/
     /* Menu banner width */
     width: 100%;
   }
-
+  /* Reverse sweet treats column */
   .sweet-treats {
     width: 50%;
     order: 1;
@@ -446,7 +468,7 @@ viewport width is equal to or wider than 703px:*/
   .sweet-treats-1 {
     width: 50%;
   }
-
+  /* Reverse savory-treats column */
   .savory-treats {
     width: 50%;
     order: 1;
@@ -488,6 +510,10 @@ viewport width is equal to or wider than 703px:*/
   .contact-form-1 {
     width: 50%;
   }
+  /* Adjust margin for 703px breakpoint */
+  .main-image {
+    margin-top: 5rem;
+  }
 }
 /* Target a viewport range wider than 701px and narrower than 992px 
 This CSS will apply styles only if your browser's 
@@ -495,6 +521,20 @@ viewport width is equal to or wider than 701px:
 AND equal to or narrower than 991px:*/
 
 @media (max-width: 992px) and (min-width: 701px) {
+  .hide-medium {
+    display: none;
+  }
+
+  h4 p {
+    text-align: justify;
+  }
+}
+
+/* Target viewport sizes 1030px and wider 
+This CSS will apply styles only if your browser's 
+viewport width is equal to or wider than 1030pxpx:*/
+@media all and (min-width: 1030px) {
+  /* This code positions nav links */
   h2 .home {
     position: absolute;
 
@@ -503,34 +543,24 @@ AND equal to or narrower than 991px:*/
   h2 .menu {
     position: absolute;
 
-    top: -230px;
+    top: -145px;
   }
 
   h2 .about {
     position: absolute;
 
-    top: -230px;
+    top: -140px;
   }
 
   h2 .contact {
     position: absolute;
 
-    top: -230px;
+    top: -145px;
   }
-  .hide-medium {
-    display: none;
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .main-image {
-    margin-top: 5rem;
-  }
-  h4 p {
-    text-align: justify;
-  }
-}
-/* Target viewport sizes 1030px and wider 
-This CSS will apply styles only if your browser's 
-viewport width is equal to or wider than 1030pxpx:*/
-@media all and (min-width: 1030px) {
   .nav {
     flex: none;
   }
@@ -580,13 +610,10 @@ viewport width is equal to or wider than 1030pxpx:*/
   .contact-form-1 {
     width: 60%;
   }
-}
 
-/* justify-content: space-between for new nav bar*/
-@media (min-width: 1025px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
+  /* Adjust margin for 1030px breakpoint */
+  .main-image {
+    margin-top: 0;
   }
 }
 
