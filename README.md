@@ -3,7 +3,7 @@ This is a bakery cafe website.
 My CSS features are as follows:
 
 1. I have created a navigation menu that expands & reduces to accommodate different device sizes – mobile to desktop. I used a media query to accomplish this.
-2. I used Flexbox CSS to organize my content which allows it to adapt to different devices. It causes my content to flip or swap places, then finally to reduce to a single column when I size the page to mobile.
+2. I used media queries and Flexbox CSS to organize my content which allows it to adapt to different devices. It causes my content to flip or swap places, then finally to reduce to a single column when I size the page to mobile.
 
 My Javascript features are as follows:
 
